@@ -1,0 +1,105 @@
+body{
+    background-color: #FFBE98;
+    font-family: sans-serif,serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+img{
+    border-radius: 50%;
+    width: 250px;
+    padding: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.menu{
+    margin: 20px;
+    list-style: none;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #FEECE2;
+    border-radius: 20px;
+}
+
+:hover{
+    color:#FFBE98;
+    padding: 8px;
+}
+
+.main-page{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.main-page > div{
+    background-color: #E2BFB3;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+:hover.image{
+    opacity: 0.3;
+}
+
+:hover.button-plan{
+    font-size: large;
+}
+
+.button-plan{
+    border: none;
+    background-color: #FEECE2;
+    border-radius: 8px;
+    margin-top: auto;
+}
+
+.footer{
+    background-color: #E2BFB3;
+    border-radius: 10px;
+    display: inline-flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+:hover.footer > a{
+    color: black;
+}
+
+.baslik{
+    background-color: #FEECE2;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@media (max-width: 720px){
+    .menu{
+        display: flex;
+        flex-direction: column;
+        list-style-type:"> ";
+        gap: 5px;
+        padding: 10px;
+    }
+    :hover{
+        padding: 0px;
+    }
+    :hover.button-plan{
+        font-size: medium;
+    }
+}
